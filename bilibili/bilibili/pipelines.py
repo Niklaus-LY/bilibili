@@ -10,7 +10,7 @@ import pymysql
 
 class BilibiliPipeline:
     def open_spider(self, spider):
-        self.db = pymysql.connect(host="47.106.76.161",
+        self.db = pymysql.connect(host="127.0.0.1",
                                   port=3306,
                                   user="root",
                                   password="root",

@@ -3,7 +3,7 @@ USE bilibili;
 CREATE TABLE video(
     `id` INT AUTO_INCREMENT,
     `title` VARCHAR(100) NOT NULL,
-    `author` VARCHAR(50) ,
+    `author` VARCHAR(50) NOT NULL ,
     `like_count`  FLOAT NOT NULL,
     `coin_count`  FLOAT NOT NULL,
     `collect_count`  FLOAT NOT NULL,

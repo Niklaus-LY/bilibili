@@ -46,7 +46,7 @@ class MyspiderSpider(scrapy.Spider):
                     dm_list.append(str(d).split(",")[-1].strip())
             dm = "  ".join(dm_list)
 
-            if title[:8] not in self.title_set:
+            if title and title[:8] not in self.title_set:
                 self.title_set.add(title[:8])
                 item = BilibiliItem()
                 item["title"] = title
